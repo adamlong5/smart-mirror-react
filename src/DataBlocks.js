@@ -63,7 +63,7 @@ const DataBlocks = props => {
       <TextBlock
         icon={props.data.reminder_type === 'birthday' ? present : plumber}
         title={props.data.reminder_title}
-        subtitle="In 2 days"
+        subtitle={`In ${props.data.reminder_date} days`}
       />
       <TextBlock
         icon={props.data.traffic_conditions === 'jam' ? trafficRed : trafficGreen}
