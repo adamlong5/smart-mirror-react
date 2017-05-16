@@ -30,6 +30,10 @@ body {
   display: flex;
   font-weight: 100 !important;
   border-bottom: 1px solid #888;
+  animation: fadeIn 1s 1;
+}
+.hide {
+  opacity: 0;
 }
 .block:first-child {
   margin-top: 24px;
@@ -86,7 +90,19 @@ body {
   margin-bottom: 12px;
   border-radius: 6px;
   width: 80%;
+  animation: fadeIn 1s 1;
 }
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .response {
   background-color: #009688;
   margin-left: 18px;

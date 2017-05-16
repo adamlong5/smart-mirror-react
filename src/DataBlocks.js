@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
 import cloudyImg from './img/cloudy.svg';
 import rainyImg from './img/rainy.svg';
@@ -55,23 +55,43 @@ const TextBlock = props => (
   </Block>
 );
 
-const DataBlocks = props => {
-  const delay = props.data.traffic_expected_time - props.data.traffic_usual_time;
-  return (
-    <div>
-      <WeatherBlock {...props} />
-      <TextBlock
-        icon={props.data.reminder_type === 'birthday' ? present : plumber}
-        title={props.data.reminder_title}
-        subtitle={`In ${props.data.reminder_date} days`}
-      />
-      <TextBlock
-        icon={props.data.traffic_conditions === 'jam' ? trafficRed : trafficGreen}
-        title={props.data.traffic_conditions === 'jam' ? "Expect delays" : "Clear commute"}
-        subtitle={delay > 0 ? `Expect delays of ${delay} minutes.` : 'No delays'}
-      />
-    </div>
-  );
+
+class DataBlocks extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      showSecond: false,
+      showThird: false,
+    }
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ showSecond: true })
+    }, 500)
+    setTimeout(() => {
+      this.setState({ showThird: true })
+    }, 1000)
+  }
+
+  render() {
+    const delay = this.props.data.traffic_expected_time - this.props.data.traffic_usual_time;
+    return (
+      <div>
+        <WeatherBlock {...this.props} />
+        {this.state.showSecond && <TextBlock
+          icon={this.props.data.traffic_conditions === 'jam' ? trafficRed : trafficGreen}
+          title={this.props.data.traffic_conditions === 'jam' ? "Expect delays" : "Clear commute"}
+          subtitle={delay > 0 ? `Expect delays of ${delay} minutes.` : 'No delays'}
+        />}
+        {this.state.showThird && <TextBlock
+          icon={this.props.data.reminder_type === 'birthday' ? present : plumber}
+          title={this.props.data.reminder_title}
+          subtitle={`In ${this.props.data.reminder_date} days`}
+        />}
+      </div>
+    );
+  }
 }
 
 export default DataBlocks;

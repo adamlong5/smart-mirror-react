@@ -1,11 +1,25 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-const SpeechBubble = props => (
-  <div className={`speech ${props.type}`}>
-    {props.children}
-  </div>
-);
+
+class SpeechBubble extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  componentDidMount() {
+    this.bubble.scrollIntoView()
+  }
+
+  render( ) {
+    return (
+      <div ref={(d) => {this.bubble = d;}} className={`speech ${this.props.type}`}>
+        {this.props.children}
+      </div>
+    )
+  }
+}
+
 
 const StreamDialog = props => (
   <div className="dialog">
@@ -17,18 +31,23 @@ const StreamDialog = props => (
 class StreamDialogWrapper extends Component {
   constructor() {
     super()
+    this.state = {
+      showSecondBubble: false,
+    }
   }
 
   componentDidMount() {
-    console.log(this.streamDialog)
-    this.streamDialog.scrollIntoView({block: 'end', behavior: 'smooth'});
+    // this.streamDialog.scrollIntoView({block: 'end', behavior: 'smooth'});
+    setTimeout(() => {
+      this.setState({ showSecondBubble: true });
+    }, 500);
   }
 
   render() {
     return (
       <div className="dialog" ref={(c) => { this.streamDialog = c; }}>
         <SpeechBubble type="intent">{this.props.intent === "FairestOfThemAll" ? "Who is the fairest of them all?" : `Tell me more about ${this.props.intent}`}....</SpeechBubble>
-        <SpeechBubble type="response">{this.props.response}</SpeechBubble>
+        {this.state.showSecondBubble && <SpeechBubble type="response">{this.props.response}</SpeechBubble>}
       </div>
     )
   }
