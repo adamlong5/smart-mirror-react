@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Greeting = props => (
-  <div>
+  <div className="greeting">
     Good morning, {props.name}
   </div>
 );

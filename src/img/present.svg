@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="59px" height="59px" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Present</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="25.4153846" y="16.4147157" width="8.16923077" height="43.5852843"></rect>
+        <rect id="path-2" x="25.5288462" y="8.58862876" width="8.16923077" height="57.5518395"></rect>
+        <rect id="path-3" x="0" y="10.8762542" width="59" height="8.66889632"></rect>
+        <rect id="path-4" x="24.5076923" y="10.8762542" width="9.98461538" height="8.66889632"></rect>
+        <rect id="path-5" x="22.341766" y="0.345368274" width="8.16923077" height="19.7375559"></rect>
+        <rect id="path-6" x="6.42113112" y="0.345368274" width="8.16923077" height="19.7375559"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-65.000000, -317.000000)">
+            <g id="Reminder" transform="translate(65.000000, 250.000000)">
+                <g id="Present" transform="translate(0.000000, 66.000000)">
+                    <rect id="Rectangle-3-Copy" stroke="#979797" stroke-width="1.3" x="3.14615385" y="17.0647157" width="52.4807692" height="42.2852843"></rect>
+                    <g id="Rectangle-3-Copy">
+                        <use fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#EC3434" stroke-width="1.3" x="26.0653846" y="17.0647157" width="6.86923077" height="42.2852843"></rect>
+                    </g>
+                    <g id="Rectangle-3-Copy" transform="translate(29.613462, 37.364548) rotate(-90.000000) translate(-29.613462, -37.364548) ">
+                        <use fill="#000000" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <rect stroke="#EC3434" stroke-width="1.3" x="26.1788462" y="9.23862876" width="6.86923077" height="56.2518395"></rect>
+                    </g>
+                    <g id="Rectangle-3">
+                        <use fill="#000000" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <rect stroke="#979797" stroke-width="1.3" x="0.65" y="11.5262542" width="57.7" height="7.36889632"></rect>
+                    </g>
+                    <g id="Rectangle-3-Copy">
+                        <use fill="#292929" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <rect stroke="#EC3434" stroke-width="1.3" x="25.1576923" y="11.5262542" width="8.68461538" height="7.36889632"></rect>
+                    </g>
+                    <g id="Bow-strings" transform="translate(11.174603, 5.000000)">
+                        <g id="Rectangle-3-Copy" transform="translate(26.426381, 10.214146) rotate(-45.000000) translate(-26.426381, -10.214146) ">
+                            <use fill="#000000" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            <rect stroke="#EC3434" stroke-width="1.3" x="22.991766" y="0.995368274" width="6.86923077" height="18.4375559"></rect>
+                        </g>
+                        <g id="Rectangle-3-Copy" transform="translate(10.505747, 10.214146) scale(-1, 1) rotate(-45.000000) translate(-10.505747, -10.214146) ">
+                            <use fill="#000000" fill-rule="evenodd" xlink:href="#path-6"></use>
+                            <rect stroke="#EC3434" stroke-width="1.3" x="7.07113112" y="0.995368274" width="6.86923077" height="18.4375559"></rect>
+                        </g>
+                    </g>
+                    <g id="Bow-loops" transform="translate(6.941176, 0.000000)" stroke="#EB3535">
+                        <ellipse id="Oval-3" stroke-width="1.3" transform="translate(12.692274, 7.123579) rotate(8.000000) translate(-12.692274, -7.123579) " cx="12.6922745" cy="7.12357947" rx="11.326988" ry="4.82951945"></ellipse>
+                        <ellipse id="Oval-3" stroke-width="1.3" transform="translate(32.007770, 7.123579) scale(-1, 1) rotate(10.000000) translate(-32.007770, -7.123579) " cx="32.0077699" cy="7.12357947" rx="11.326988" ry="4.82951945"></ellipse>
+                        <ellipse id="Oval-3" stroke-width="1.02700003" fill="#000000" transform="translate(29.500000, 8.000000) scale(-1, 1) rotate(10.000000) translate(-29.500000, -8.000000) " cx="29.5" cy="8" rx="8.8968254" ry="4"></ellipse>
+                        <ellipse id="Oval-3" stroke-width="1.02700003" fill="#000000" transform="translate(15.126339, 7.588889) rotate(10.000000) translate(-15.126339, -7.588889) " cx="15.1263386" cy="7.5888887" rx="8.8968254" ry="4"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

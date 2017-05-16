@@ -1,3 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
 .sidebar {
-  width: 40%;
+  width: 30%;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 100;
+  padding: 24px !important;
+}
+
+.greeting {
+  font-size: 36px;
+  line-height: 72px;
+}
+.dateTime {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.block {
+  padding: 36px 16px 36px 0;
+  border-top: 1px solid #888;
+  display: flex;
+  font-weight: 100 !important;
+  border-bottom: 1px solid #888;
+}
+.block:first-child {
+  margin-top: 24px;
+}
+
+.blockImageWrapper {
+  min-width: 80px;
+}
+.blockIcon {
+  margin: 0 auto;
+  display: block;
+}
+
+.blockText {
+  /*display: flex;*/
+  flex: 2;
+  margin-left: 14px;
+}
+.weatherDetails {
+  display: flex;
+  opacity: 0.7;
+  margin-top: 14px;
+}
+.weatherDetails > * {
+  margin-right: 26px;
+}
+.weatherDetails h3 {
+  display: inline-block;
+  margin-left: 6px;
+  margin-top: 5px !important;
+}
+.weatherSmallIcon{
+  float: left;
+}
+
+.blockSubTitle {
+  opacity: 0.7;
+  margin-top: 14px;
+}
+
+.dialog {
+  margin-top: 44px;
+}
+.speech {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  background-color: #00BCD4;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  width: 80%;
+}
+.response {
+  background-color: #009688;
+  margin-left: 18px;
 }
