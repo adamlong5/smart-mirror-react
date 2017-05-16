@@ -21,7 +21,7 @@ class Stream extends Component {
 
   render() {
     return this.state.responses.length === 0 ? null :
-      <div>
+      <div className="stream">
         {this.state.responses.map((response, i) => <StreamDialog key={response.response + i} {...response} />)}
       </div>
   }

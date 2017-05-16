@@ -70,12 +70,17 @@ body {
   margin-top: 14px;
 }
 
+.stream {
+  overflow-y: scroll;
+  height: 500px;
+}
+
 .dialog {
   margin-top: 44px;
 }
 .speech {
   padding: 20px;
-  font-size: 18px;
+  font-size: 32px;
   font-weight: 300;
   background-color: #00BCD4;
   margin-bottom: 12px;
